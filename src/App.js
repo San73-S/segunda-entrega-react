@@ -1,23 +1,19 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./pages/Layout";
-import Galeria from "./pages/Galeria";
-import Productos from "./pages/Productos";
 import Error from "./pages/Error";
-import Home from "./pages/Home";
+import NavBar from "./components/NavBar";
 import DetalleProducto from "./pages/DetalleProducto";
-
 import "./App.css"
 
 function App() {
   return (
     
     <BrowserRouter>
-      <Routes>      
-        <Route path="/" element={<Layout/>}> 
-          <Route index element={<Home/>} />
-          <Route path="/productos" element={<Productos/>} /> 
-          <Route path="/productos/:productoId" element={<DetalleProducto/>}/>          
-        </Route>
+      <NavBar/>
+      <Routes> 
+          <Route path="/" element={<Layout/>}/> 
+          <Route path="/category/:categoryId" element={<Layout/>} /> 
+          <Route path="/item/:productoId" element={<DetalleProducto/>}/>     
           <Route path="*" element={<Error/>} />
       </Routes>      
     </BrowserRouter>
@@ -25,9 +21,5 @@ function App() {
   );
 }
 
-/*
-/category/:id
-/item/:id
-*/ 
 
 export default App; 
