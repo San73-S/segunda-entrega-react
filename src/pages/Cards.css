@@ -1,3 +1,5 @@
+
+
 .galeria{
     display: grid;
     grid-template-columns: 30% 30% 30%;
@@ -47,4 +49,30 @@ a{
 
 a:hover{
     background-color:#8999e2;
+}
+
+footer{
+    background-color: #4757a3;
+    height: 60px;
+    margin-top: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detalle h2{
+    text-align: center;
+}
+
+.detalle .producto{
+    grid-template-columns: 80%;
+}
+
+.detalle .producto img{
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.card-producto{
+    
 }

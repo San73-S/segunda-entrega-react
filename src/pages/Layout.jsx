@@ -23,7 +23,7 @@ function Layout(){
                 );
                 })} 
             </div>
-            <nav>Pier de pagina</nav>
+            <footer>@Todos los derechos reservados 2025</footer>
         </div>
     );
 }

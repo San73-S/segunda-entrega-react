@@ -12,21 +12,15 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgb(26, 26, 26);
-    height: 60px;
-}
-
-footer{
-    background-color: rgb(26, 26, 26);
-    height: 60px;
-    margin-top: 10px;
+    background-color: #4757a3;
     color: white;
+    height: 60px;
 }
 
 nav a{
     width: 10%;
     padding: 10px;
-    background-color: green;
+    background-color: #6f81d8;
     border-radius: 4px;
     color: white;
     text-decoration: none;
